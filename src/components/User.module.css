@@ -1,0 +1,24 @@
+.wrapper{
+    padding: 20px;
+    background: #dee4c6;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+.input__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    min-width: 500px;
+}
+
+.button{
+    background-color: purple;
+    color:#dee4c6;
+    border:none;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #8b618b;
+    color:black
+}
+

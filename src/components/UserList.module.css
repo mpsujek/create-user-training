@@ -1,0 +1,15 @@
+.wrapper{
+    padding: 20px;
+    background: #dee4c6;
+    border-radius: 15px;
+}
+.userslist{
+    list-style: none;
+    padding:0;
+}
+.listelement{
+    border:1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
