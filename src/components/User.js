@@ -4,8 +4,6 @@ import styles from './User.module.css';
 const User = (props) => {
   const [userName, setUserName] = useState('');
   const [userAge, setUserAge] = useState('');
-  const [isNameValid, setIsNameValid] = useState(true);
-  const [isAgeValid, setIsAgeValid] = useState(true);
   const ageChangeHanlder = (event) => {
     setUserAge(event.target.value);
   };
