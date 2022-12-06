@@ -7,6 +7,7 @@ function UsersList({ usersList }) {
         <ul className={style.userslist}>
           {usersList.map((singleUser) => (
             <li
+              key={singleUser.id}
               className={style.listelement}
             >{`${singleUser.userName} (${singleUser.userAge} years old)`}</li>
           ))}

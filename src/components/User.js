@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 import styles from './User.module.css';
 
 const User = (props) => {
@@ -19,7 +20,8 @@ const User = (props) => {
     if (userAge < 0) {
       return alert('Age cant be -1');
     }
-    props.addUser({ userName, userAge });
+    const id = Math.floor(Math.random() * 90000) + 10000;
+    props.addUser({ id, userName, userAge });
     setUserName('');
     setUserAge('');
   };
@@ -39,7 +41,7 @@ const User = (props) => {
             <label>Age (Years)</label>
             <input type='number' value={userAge} onChange={ageChangeHanlder} />
           </div>
-          <button className={styles.button}>Add User</button>
+          <Button>Add User</Button>
         </form>
       </div>
     </>
