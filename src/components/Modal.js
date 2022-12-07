@@ -7,7 +7,7 @@ const Modal = (props) => {
       <div className={styles.container}>
         <h2>Error</h2>
         <p>{props.message}</p>
-        <Button>Ok</Button>
+        <Button onClick={props.hideModal}>Ok</Button>
       </div>
     </div>
   );
